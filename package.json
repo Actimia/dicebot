@@ -4,7 +4,16 @@
   "main": "index.ts",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "yarn compile && ts-node src/main.ts",
+    "dev": "nodemon -x ts-node src/main.ts",
+    "compile": "nearleyc src/grammar.ne -o src/grammar.js"
+  },
   "dependencies": {
+    "@types/nearley": "^2.11.1",
+    "@types/node": "^13.13.4",
+    "nearley": "^2.19.3",
+    "nodemon": "^2.0.3",
     "ts-node": "^8.9.1",
     "typescript": "^3.8.3"
   }
