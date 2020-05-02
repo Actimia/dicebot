@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  }
 }
